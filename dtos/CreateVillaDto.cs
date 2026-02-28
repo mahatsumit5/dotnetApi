@@ -2,6 +2,20 @@
 
 namespace RoyalVilla_API.dtos
 {
+    public class VillaDTO
+    {
+        public int Id { get; set; }
+        public required string Name { get; set; }
+        public string? Details { get; set; }
+        public double Rate { get; set; }
+
+        public int Occupancy { get; set; }
+
+        public int Sqft { get; set; }
+        public string? ImageUrl { get; set; }
+
+
+    }
     public class VillaCreateDTO
     {
         [MaxLength(50)]
@@ -17,4 +31,21 @@ namespace RoyalVilla_API.dtos
 
 
     }
+    public class UpdateVillaDTO
+    {
+        [Required]
+        public required int Id { get; set; }
+        public required string Name { get; set; }
+        public string? Details { get; set; }
+        public double Rate { get; set; }
+
+        public int Occupancy { get; set; }
+
+        public int Sqft { get; set; }
+        public string? ImageUrl { get; set; }
+
+
+    }
+
+
 }

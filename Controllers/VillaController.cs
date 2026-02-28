@@ -4,47 +4,47 @@ using Microsoft.EntityFrameworkCore;
 using RoyalVilla_API.Database;
 using RoyalVilla_API.dtos;
 using RoyalVilla_API.Models;
-using System.Text.Json;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace RoyalVilla_API.Controllers
 {
     [ApiController]
     [Route("api/villa")]
-    public class VillaController(ApplicationDbContext db,IMapper mapper) : ControllerBase
+    public class VillaController(ApplicationDbContext db, IMapper mapper) : ControllerBase
     {
 
         private readonly ApplicationDbContext _db = db;
         readonly IMapper _mapper = mapper;
-        [HttpGet(Name = "Getvillas")]
-        public async Task<ActionResult<IEnumerable<Villa>>> GetVillas()
+
+
+        [HttpGet]
+        public async Task<ActionResult<ApiResponse<List<VillaDTO>>>> GetVillas()
         {
-            return Ok(await _db.Villa.ToListAsync());
+            var villas = await _db.Villa.ToListAsync();
+            List<VillaDTO> villastoFR = _mapper.Map<List<VillaDTO>>(villas);
+            return ApiResponse<List<VillaDTO>>.SendSuccessResponse(villastoFR, "Villas retrived successfully");
         }
 
-        //[HttpGet("{id:int}")]
-        //public string GetVillaById([FromRoute] int id)
-        //{
-        //    return $"This is a villa with id: {id}";
-        //}
+
 
         [HttpGet("{id:int}")]
-
         //FromRoute is the default
-        public async Task<ActionResult<Villa>> GetVillaById([FromRoute] int id)
+        public async Task<ActionResult<ApiResponse<VillaDTO>>> GetVillaById([FromRoute] int id)
         {
             try
             {
-
                 if (id <= 0)
                 {
-                    return BadRequest("id invalid");
+                    return ApiResponse<VillaDTO>.SendErrorResponse(400, "Bad Request", "Villa Id must be greater than 0");
                 }
                 var villa = await _db.Villa.FirstOrDefaultAsync(u => u.Id == id);
                 if (villa == null)
                 {
-                    return NotFound($"villa with id {id} not found");
+                    return ApiResponse<VillaDTO>.SendErrorResponse(404, "Not Found", $"villa with id {id} not found");
                 }
-                return Ok(villa);
+
+                var data = _mapper.Map<VillaDTO>(villa);
+                return ApiResponse<VillaDTO>.SendSuccessResponse(data, "Villa retrived successfully");
             }
             catch (Exception ex)
             {
@@ -55,20 +55,20 @@ namespace RoyalVilla_API.Controllers
 
         [HttpPost]
 
-        public async Task<ActionResult<Villa>> CreateVilla(VillaCreateDTO villaDTO)
+        public async Task<ActionResult<ApiResponse<VillaDTO>>> CreateVilla(VillaCreateDTO createVillaParams)
         {
             try
             {
-                if (villaDTO == null)
+                if (createVillaParams == null)
                 {
-                    return BadRequest("Villa is required");
+                    return ApiResponse<VillaDTO>.SendErrorResponse(400, "Bad Request", "Villa is required");
                 }
-                var villa = _mapper.Map<Villa>(villaDTO);
+                Villa villa = _mapper.Map<Villa>(createVillaParams);
                 var newVilla = await _db.Villa.AddAsync(villa);
                 var result = await _db.SaveChangesAsync();
 
-                return Ok(newVilla.Entity);
-
+                var dataToReturn = _mapper.Map<VillaDTO>(newVilla.Entity);
+                return ApiResponse<VillaDTO>.SendSuccessResponse(dataToReturn, "Villa retrived successfully");
             }
             catch (Exception ex)
             {
@@ -77,6 +77,36 @@ namespace RoyalVilla_API.Controllers
             }
         }
 
+        [HttpPut("{id:int}")]
+        public async Task<ActionResult<Villa>> UpdateVilla([FromRoute] int id, UpdateVillaDTO villaDTO)
+        {
+
+            try
+            {
+                if (villaDTO == null)
+                {
+                    return BadRequest("Update parameters are required");
+                }
+
+                var villaToUpdate = await _db.Villa.FirstOrDefaultAsync(u => u.Id == id);
+                if (villaToUpdate == null)
+                {
+                    return NotFound("Villa not found");
+                }
+                _mapper.Map(villaDTO, villaToUpdate);
+
+                villaToUpdate.UpdatedDate = DateTime.Now;
+                await _db.SaveChangesAsync();
+                return Ok(villaDTO);
+
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(StatusCodes.Status500InternalServerError, $"error occured  error:{ex.Message}");
+
+            }
+        }
 
         [HttpDelete("{id:int}")]
 

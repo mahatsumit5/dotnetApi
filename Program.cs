@@ -7,17 +7,19 @@ using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
 // Add services to the container.
-builder.Services.AddDbContext<ApplicationDbContext>(option =>
-{
-    option.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-});
-builder.Services.AddAutoMapper(opt =>
-{
-    //<Source,Destination>
-    opt.CreateMap<VillaCreateDTO, Villa>();
-});
+builder.Services.AddDbContext<ApplicationDbContext>(opt => opt.UseSqlServer(connectionString));
+//builder.Services.AddAutoMapper(opt =>
+//{
+//  //<Source,Destination>
+//    opt.CreateMap<VillaCreateDTO, Villa>();
+//    opt.CreateMap<UpdateVillaDTO, Villa>();
+//    opt.CreateMap<Villa, VillaDTO>();
+//});
+
+builder.Services.AddAutoMapper(opt=> { },typeof(Program));
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -47,6 +49,7 @@ static async Task SeedDataAsync(WebApplication app)
     var context=scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 
     await context.Database.MigrateAsync();
+    
 }
 
 

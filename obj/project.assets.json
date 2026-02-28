@@ -3272,11 +3272,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\c#\\RoyalVilla_API\\RoyalVilla_API.csproj",
+      "projectUniqueName": "d:\\c#\\RoyalVilla_API\\RoyalVilla_API.csproj",
       "projectName": "RoyalVilla_API",
-      "projectPath": "D:\\c#\\RoyalVilla_API\\RoyalVilla_API.csproj",
+      "projectPath": "d:\\c#\\RoyalVilla_API\\RoyalVilla_API.csproj",
       "packagesPath": "C:\\Users\\Chrisna Bahun\\.nuget\\packages\\",
-      "outputPath": "D:\\c#\\RoyalVilla_API\\obj\\",
+      "outputPath": "d:\\c#\\RoyalVilla_API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

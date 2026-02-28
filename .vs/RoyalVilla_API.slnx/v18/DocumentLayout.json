@@ -1,20 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\c#\\RoyalVilla_API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\controllers\\villacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:controllers\\villacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\dtos\\createvilladto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:dtos\\createvilladto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\dtos\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:dtos\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\mapper\\villaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:mapper\\villaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedHeight": 200,
           "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -26,8 +43,8 @@
           ]
         },
         {
-          "DockedWidth": 185,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 200,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -51,11 +68,76 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ApiResponse.cs",
+              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\dtos\\ApiResponse.cs",
+              "RelativeDocumentMoniker": "dtos\\ApiResponse.cs",
+              "ToolTip": "D:\\c#\\RoyalVilla_API\\dtos\\ApiResponse.cs",
+              "RelativeToolTip": "dtos\\ApiResponse.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA7wBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T10:51:56.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateVillaDto.cs",
+              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\dtos\\CreateVillaDto.cs",
+              "RelativeDocumentMoniker": "dtos\\CreateVillaDto.cs",
+              "ToolTip": "D:\\c#\\RoyalVilla_API\\dtos\\CreateVillaDto.cs",
+              "RelativeToolTip": "dtos\\CreateVillaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T10:31:21.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\c#\\RoyalVilla_API\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T09:57:29.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "VillaProfile.cs",
+              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\mapper\\VillaProfile.cs",
+              "RelativeDocumentMoniker": "mapper\\VillaProfile.cs",
+              "ToolTip": "D:\\c#\\RoyalVilla_API\\mapper\\VillaProfile.cs",
+              "RelativeToolTip": "mapper\\VillaProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T09:32:17.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VillaController.cs",
+              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\Controllers\\VillaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VillaController.cs",
+              "ToolTip": "D:\\c#\\RoyalVilla_API\\Controllers\\VillaController.cs",
+              "RelativeToolTip": "Controllers\\VillaController.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwDkAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-26T06:08:14.837Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -25,7 +25,6 @@ D:\c#\RoyalVilla_API\obj\Debug\net10.0\staticwebassets.build.json.cache
 D:\c#\RoyalVilla_API\obj\Debug\net10.0\staticwebassets.development.json
 D:\c#\RoyalVilla_API\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 D:\c#\RoyalVilla_API\obj\Debug\net10.0\swae.build.ex.cache
-D:\c#\RoyalVilla_API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 D:\c#\RoyalVilla_API\obj\Debug\net10.0\RoyalVil.8829EF8E.Up2Date
 D:\c#\RoyalVilla_API\obj\Debug\net10.0\RoyalVilla_API.dll
 D:\c#\RoyalVilla_API\obj\Debug\net10.0\refint\RoyalVilla_API.dll
@@ -160,3 +159,5 @@ D:\c#\RoyalVilla_API\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.Sq
 D:\c#\RoyalVilla_API\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
 D:\c#\RoyalVilla_API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.InMemory.dll
 D:\c#\RoyalVilla_API\bin\Debug\net10.0\AutoMapper.dll
+D:\c#\RoyalVilla_API\obj\Debug\net10.0\RoyalVilla_API.sourcelink.json
+D:\c#\RoyalVilla_API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
