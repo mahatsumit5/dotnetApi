@@ -14,7 +14,7 @@ public class ApiResponse<TData>
     public DateTime TimeStamp { get; set; } = DateTime.UtcNow;
    
 
-    public static ApiResponse<TData> SendErrorResponse(int statusCode, string message, Object? err)
+    public static ApiResponse<TData> SendErrorResponse(int statusCode, string message, object? err=null)
     {
         
         return new ApiResponse<TData>

@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\c#\\RoyalVilla_API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\controllers\\villacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:controllers\\villacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\dtos\\createvilladto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:dtos\\createvilladto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\dtos\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:dtos\\apiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\mapper\\villaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:mapper\\villaprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|d:\\c#\\royalvilla_api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4C445AB0-F089-8456-5ECF-CD10D68D0082}|RoyalVilla_API.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -39,12 +27,38 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\services\\AuthService.cs",
+              "RelativeDocumentMoniker": "services\\AuthService.cs",
+              "ToolTip": "D:\\c#\\RoyalVilla_API\\services\\AuthService.cs",
+              "RelativeToolTip": "services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T09:48:04.762Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\c#\\RoyalVilla_API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T08:17:14.277Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -73,71 +87,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApiResponse.cs",
-              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\dtos\\ApiResponse.cs",
-              "RelativeDocumentMoniker": "dtos\\ApiResponse.cs",
-              "ToolTip": "D:\\c#\\RoyalVilla_API\\dtos\\ApiResponse.cs",
-              "RelativeToolTip": "dtos\\ApiResponse.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA7wBQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T10:51:56.638Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreateVillaDto.cs",
-              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\dtos\\CreateVillaDto.cs",
-              "RelativeDocumentMoniker": "dtos\\CreateVillaDto.cs",
-              "ToolTip": "D:\\c#\\RoyalVilla_API\\dtos\\CreateVillaDto.cs",
-              "RelativeToolTip": "dtos\\CreateVillaDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T10:31:21.984Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\c#\\RoyalVilla_API\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAADIAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T09:57:29.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "VillaProfile.cs",
-              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\mapper\\VillaProfile.cs",
-              "RelativeDocumentMoniker": "mapper\\VillaProfile.cs",
-              "ToolTip": "D:\\c#\\RoyalVilla_API\\mapper\\VillaProfile.cs",
-              "RelativeToolTip": "mapper\\VillaProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T09:32:17.559Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "VillaController.cs",
-              "DocumentMoniker": "D:\\c#\\RoyalVilla_API\\Controllers\\VillaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VillaController.cs",
-              "ToolTip": "D:\\c#\\RoyalVilla_API\\Controllers\\VillaController.cs",
-              "RelativeToolTip": "Controllers\\VillaController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAYwDkAAABsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-26T06:08:14.837Z",
-              "EditorCaption": ""
             }
           ]
         }

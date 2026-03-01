@@ -3,6 +3,7 @@ using RoyalVilla_API.Controllers;
 using RoyalVilla_API.Database;
 using RoyalVilla_API.dtos;
 using RoyalVilla_API.Models;
+using RoyalVilla_API.services;
 using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,8 +19,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(opt => opt.UseSqlServer(conn
 //    opt.CreateMap<UpdateVillaDTO, Villa>();
 //    opt.CreateMap<Villa, VillaDTO>();
 //});
-
 builder.Services.AddAutoMapper(opt=> { },typeof(Program));
+
+builder.Services.AddScoped<IAuthService, AuthService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
