@@ -161,3 +161,4 @@ D:\c#\RoyalVilla_API\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.InMemory.dl
 D:\c#\RoyalVilla_API\bin\Debug\net10.0\AutoMapper.dll
 D:\c#\RoyalVilla_API\obj\Debug\net10.0\RoyalVilla_API.sourcelink.json
 D:\c#\RoyalVilla_API\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+D:\c#\RoyalVilla_API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

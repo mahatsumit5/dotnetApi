@@ -2,16 +2,21 @@
 
 using Microsoft.EntityFrameworkCore;
 using RoyalVilla_API.Models;
+using System.ComponentModel.DataAnnotations;
 
 namespace RoyalVilla_API.Database
 {
     public class ApplicationDbContext(DbContextOptions options) : DbContext(options)
     {
 
-
+       
         public DbSet<Villa> Villa { get; set; }
 
         public DbSet<User> Users { get; set; }
+
+
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -42,4 +47,6 @@ namespace RoyalVilla_API.Database
             );
         }
     }
+
+
 }

@@ -39,5 +39,14 @@ public class AuthController(IAuthService authservice) : ControllerBase
         return CreatedAtAction(nameof(Register), response);
 
     }
+
+
+    [HttpPost("/login")]
+    public async Task<ActionResult<LoginResponseDTO>> Login([FromBody] LoginRequestDTO loginReqDTO)
+    {
+        var user=await _authService.LoginAsync(loginReqDTO);
+
+        return Ok(user);
+    }
 }
 

@@ -31,7 +31,7 @@ namespace RoyalVilla_API.dtos
     {
         public string? Token { get; set; }
 
-        public UserDTO? UserDto { get; set; }
+        public UserDTO? User { get; set; }
 
     }
 
